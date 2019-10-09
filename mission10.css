@@ -1,0 +1,429 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    width: 100%;
+    font-family: Microsoft YaHei, serif;
+
+}
+
+header {
+    width: 100%;
+    height: 4rem;
+    background-color: #1D7AD9;
+}
+.top-menu {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+/*顶部栏*/
+p {
+    margin: 0;
+    padding: 0;
+}
+.service-phone {
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    vertical-align: middle;
+    margin: auto 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+button {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/*客服电话文字*/
+.btn-top-main {
+    display: flex;
+}
+.btn-top-two-1, .btn-top-two-2 {
+    width: 5.4rem;
+    height: 100%;
+    outline: none;
+    background-color: #1D7AD9;
+}
+.btn-top-two-1 {
+    border-left: 1px solid #fff;
+}
+.btn-top-two-2 {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    margin-left: -.3rem;
+}
+.btn-top-two-1:hover .link-btn-word, .btn-top-two-2:hover .link-btn-word {
+    text-decoration: none;
+    color: #333333;
+}
+
+.btn-top-two-1:hover, .btn-top-two-2:hover {
+    width: 10.4rem;
+    background-color: #fff;
+}
+/*鼠标移动到登录和注册按钮时，自动变大*/
+.link-btn-word {
+    font-size: 1.6rem;
+    color: #fff;
+    text-decoration: none;
+}
+/*上面是头部按钮*/
+nav {
+    width: 100%;
+    background-color: #F9F9F9;
+}
+.list-top-main {
+    padding-top: 2.2rem;
+    padding-bottom: 2rem;
+}
+.btn-top {
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.list-btn {
+    padding: 1.7rem;
+    margin-left: 6rem;
+    background-color: #FFFFFF;
+    opacity: 1;
+    border-radius: 5px;
+    box-shadow:1px 1px 0 0 rgba(3,3,3,0.08);
+}
+
+.btn-word-top {
+    font-size: 1.6rem;
+    color: #333333;
+}
+.list-btn:hover {
+    background-color: #1D7AD9;
+    cursor: pointer;
+}
+.list-btn:hover .btn-word-top {
+    text-decoration: none;
+    color: #fff;
+}
+/*上面是导航栏*/
+.btn-hover {
+    width: 4.5rem;
+    height: 4rem;
+    padding: 0 .5rem;
+    border: 2px solid #1D7AD9;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.little-line {
+    height: 0.2rem;
+    background-color: #1D7AD9;
+}
+@media (min-width: 767px) {
+    .btn-hover {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .btn-top {
+    display: none;
+    }
+    .list-top-main {
+    display: flex;
+    justify-content: flex-end;
+    }
+}
+
+main .content-title {
+    font-size: 2.2rem;
+    color: #333333;
+    padding-left: 0.6rem;
+    border-left: 4px solid #1D7AD9;
+    margin-top: 5.2rem;
+    margin-bottom: 1.6rem;
+
+}
+
+/*下面是流程*/
+.process-main {
+    display: flex;
+    justify-content: flex-end;
+}
+.process-box-1, .process-box-2, .process-box-3, .process-box-4 {
+    margin-top: 4.8rem;
+}
+.path-word {
+    font-size: 1.8rem;
+    color: #CCCCCC;
+    margin: 3.4rem 4.8rem 0 2.5rem;
+}
+.path-line {
+    width: 16rem;
+    height: .5rem;
+    background-color:  #CCCCCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 992px) {
+    .path-line {
+    width: 8rem;
+    }
+    .path-word {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.4rem;
+    }
+}
+/*小于992px时进度条大小变化*/
+.process-point {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background-color: #CCCCCC;
+    text-align: center;
+    line-height: 2.4rem;
+    font-size: 1.4rem;
+    color: #fff;
+}
+.process-box:hover {
+    cursor: pointer;
+}
+.process-box:hover .path-line {
+    background-color: #FF7F02;
+}
+.process-box:hover .process-point {
+    background-color: #FF7F02;
+}
+.process-box:hover .path-word {
+    color: #FF7F02;
+}
+/*上面是流程*/
+
+/*请选择箱型文字*/
+.box-middle-sec {
+    flex-direction: column;
+}
+.box-type {
+    background-color: #F4F4F4;
+    display: flex;
+    align-items: center;
+}
+.box-pic-1, .box-pic-2, .box-pic-3 {
+    width: 2.2rem;
+    height: 2rem;
+    margin: 1.3rem 0.7rem 1.3rem 1.4rem;
+}
+.box-pic-1 {
+    background: url("box.png")no-repeat;
+}
+.box-pic-2 {
+    background: url("Ruler.png")no-repeat;
+}
+.box-pic-3 {
+    background: url("Cut ／ Scissors.png")no-repeat;
+}
+.box-word {
+    font-size: 1.8rem;
+    color: #1D7AD9;
+}
+/*上面是选择箱型标题的图片和文字*/
+.btn-main {
+     display: flex;
+     justify-content: space-between;
+     background-color: #FBFCFF;
+     align-items: center;
+     padding-left: 5rem;
+ }
+.box-content {
+    align-self:center;
+    margin: 3.5rem 0;
+}
+.size-box-main-1 {
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+.size-box-main-2 {
+    margin-bottom: 2.5rem;
+}
+/*下面是中间尺寸栏的表单*/
+.word-size {
+    margin-right: 6rem;
+    margin-bottom: 1rem;
+}
+.word-size-box {
+    width: 7rem;
+    height: 3rem;
+    background:rgba(240,88,88,0);
+    border:1px solid rgba(232, 232, 232, 1);
+    cursor: auto;
+    outline: none;
+}
+.word-size-1 {
+    font-size: 1.8rem;
+    color: #666666;
+}
+
+/*上面是中间尺寸栏的表单*/
+.sec-main-1, .sec-main-2, .sec-main-3 {
+    font-size: 1.8rem;
+    color: #666666;
+}
+.sec-main-1 {
+    margin: 0 5rem 1rem 0;
+}
+label,input{
+    cursor: pointer;
+    margin: 0;
+}
+/*下面是下拉按钮的样式*/
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(232, 232, 232, 1);
+}
+
+.about-word, .about-word-1 {
+    font-size: 1.4rem;
+    color: #999999;
+    padding: 1.1rem 3.7rem 1.1rem 1.7rem;
+}
+.about-word {
+    background: url("多边形 1 拷贝.png")no-repeat 9.5rem;
+    margin-right: 1.8rem;
+
+}
+.arrow-main {
+    width: 2.4rem;
+    height: 2.8rem;
+    background-color: #1D7AD9;
+}
+
+/*上面是下拉按钮的样式*/
+
+
+/*下面是两个小蓝点的css*/
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label::before {
+    display: inline-block;
+    content: "";
+    border: 1px solid #adb5bd;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background-color: #fff;
+    vertical-align: middle;
+    margin-right: 1.8rem;
+}
+input[type="radio"]:checked + label::before {
+    border: 5px solid #1D7AD9;
+    background-color: #fff;
+}
+
+/*两个小蓝点css*/
+.sec-main-3 {
+    margin-left: 5rem;
+    margin-right: .9rem;
+}
+
+/*这是两组按钮的大盒子*/
+.btn-right {
+    margin: 2.5rem 1.8rem 2.4rem 1rem;
+}
+/*右边下拉按钮的边距*/
+
+.btn-next {
+    background-color: #E15053;
+    font-size: 2.4rem;
+    color: #FFFFFF;
+    margin: 14.2rem auto 9.8rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.word-next {
+    margin: 1rem 5.4rem;
+}
+
+footer {
+    width: 100%;
+    background-color: #F9F9F9;
+}
+.introduction-word {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.introduction-word-1 {
+    width: 100%;
+    display: flex;
+    padding-top: 5.7rem;
+    padding-bottom: 5.7rem;
+   }
+
+.company-name {
+    font-size: 1.8rem;
+    color: #999999;
+    margin-bottom: 2.2rem;
+}
+/*这是底部51包装网标题*/
+.word-bottom-middle {
+    display: flex;
+}
+.bottom-word-2 {
+    font-size: 1.4rem;
+    color: #999999;
+    margin-bottom: 2.2rem;
+    margin-right: 3rem;
+}
+/*底部中间文字*/
+.phone-number {
+    font-size: 1.4rem;
+    color: #999999;
+    margin-bottom: 1.35rem;
+}
+.phone {
+
+}
+.phone-box {
+    display: flex;
+}
+@media (min-width: 992px) {
+    .phone-box {
+    display: flex;
+    justify-content: flex-end;
+    }
+    .word-bottom-middle {
+    justify-content: center;
+    }
+}
+.pic-code {
+    width: 9.2rem;
+    height: 9.2rem;
+    background: url("qrcode.png")no-repeat;
+}
+
+.link-bottom {
+    background-color: #1D7AD9;
+    text-align: center;
+}
+/*底部链接背景*/
+
+.link-bottom-word {
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    margin-right: 2.2rem;
+}
