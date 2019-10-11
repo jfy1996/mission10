@@ -341,9 +341,9 @@ select {
     padding: 1.1rem 3.7rem 1.1rem 1.7rem;
 }
 .about-word {
-    background: url("多边形 1 拷贝.png")no-repeat 9.5rem;
+    background: url("多边形 1 拷贝.png")no-repeat scroll right center transparent;
+    background-size: 2.4rem 2.8rem;
     margin-right: 1.8rem;
-
 }
 .arrow-main {
     width: 2.4rem;
