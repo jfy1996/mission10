@@ -334,7 +334,10 @@ select {
     background:rgba(255,255,255,1);
     border:1px solid rgba(232, 232, 232, 1);
 }
-
+select::-ms-expand {
+    display: none;
+}
+/*清除IE的原先下拉箭头*/
 .about-word, .about-word-1 {
     font-size: 1.4rem;
     color: #999999;
