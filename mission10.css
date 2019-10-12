@@ -34,6 +34,7 @@ a:hover {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    align-self: center;
 }
 button {
     outline: none;
@@ -243,20 +244,25 @@ main .content-title {
 .box-pic-1, .box-pic-2, .box-pic-3 {
     width: 2.2rem;
     height: 2rem;
-    margin: 1.3rem 0.7rem 1.3rem 1.4rem;
+    margin: 0 0.7rem 0 1.4rem;
 }
 .box-pic-1 {
     background: url("box.png")no-repeat;
+    background-size: 2.2rem 2rem;
 }
 .box-pic-2 {
     background: url("Ruler.png")no-repeat;
+    background-size: 2.2rem 2rem;
 }
 .box-pic-3 {
     background: url("Cut ／ Scissors.png")no-repeat;
+    background-size: 2.2rem 2rem;
 }
 .box-word {
     font-size: 1.8rem;
     color: #1D7AD9;
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
 }
 /*上面是选择箱型标题的图片和文字*/
 .btn-main {
@@ -391,6 +397,7 @@ input[type="radio"]:checked + label::before {
 /*右边下拉按钮的边距*/
 
 .btn-next {
+    width: 18rem;
     background-color: #E15053;
     font-size: 2.4rem;
     color: #FFFFFF;
@@ -400,7 +407,7 @@ input[type="radio"]:checked + label::before {
     border-radius: 5px;
 }
 .word-next {
-    margin: 1rem 5.4rem;
+    margin: 1rem auto;
 }
 
 footer {
@@ -442,9 +449,7 @@ footer {
     color: #999999;
     margin-bottom: 1rem;
 }
-.phone {
 
-}
 .phone-box {
     display: flex;
 }
